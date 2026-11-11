@@ -19,7 +19,7 @@ public class RegistrationDataProvider {
 		{
 			return new Object[][]
 				{
-					{"Male","Rohit", "Ranshinge","rranhin@gmail.com","Rahul@3451","Rahul@3451"},
+					{"Male","Rohit", "Ranshinge","ranhin@gmail.com","Rahul@3451","Rahul@3451"},
 				};
 		};
 		
