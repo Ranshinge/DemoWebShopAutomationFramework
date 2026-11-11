@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="DemoWebShopAutomationSuite"
+       parallel="classes"
+       thread-count="2">
+
+    <listeners>
+        <listener class-name="com.demowebshop.reporting.TestListener"/>
+    </listeners>
+
+    <test name="DemoWebShopWebTests">
+
+        <classes>
+
+            <class name="com.demowebshop.tests.web.registration.RegistrationTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>

@@ -1,0 +1,23 @@
+# Maven build files
+/target/
+
+# Test execution output
+/test-output/
+
+# Automation logs
+/logs/
+*.log
+
+# Extent Reports and screenshots
+/reports/
+
+# Eclipse generated files
+/.settings/
+
+# IDE files
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
