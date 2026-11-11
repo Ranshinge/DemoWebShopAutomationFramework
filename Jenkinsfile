@@ -1,7 +1,7 @@
-
 pipeline {
+
     agent any
-	
+
     tools {
         jdk 'JDK21'
         maven 'Maven'
@@ -30,12 +30,24 @@ pipeline {
     }
 
     post {
+
         always {
             echo 'Automation Pipeline Execution Completed'
+
+            publishHTML(target: [
+                reportName: 'TestNG Reports',
+                reportDir: 'target/surefire-reports',
+                reportFiles: 'index.html',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
         }
+
         success {
             echo 'Build and Test Execution Passed'
         }
+
         failure {
             echo 'Build or Test Execution Failed'
         }
